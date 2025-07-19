@@ -15,7 +15,7 @@ jobs:
 
       - name: Download & unzip
         run: |
-          curl -L https://zip.cm.edu.kg -o ip.zip
+          curl -L https://zip.cm.edu.kg/ip.zip -o ip.zip
           unzip -j ip.zip "*/HK.txt" "*/KR.txt" -d tmp/
 
       - name: Merge HK & KR → ip.txt
